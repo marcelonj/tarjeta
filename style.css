@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: rgb(255, 219, 185);
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+}
+
+.article section img {
+    display: flex;
+    height: 300px;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.article section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+#mapa_google{
+    width: 35vh;
+    height: 40vh;
+    border: 0;
+}
+
+.header nav {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.header nav a {
+    border: 1px solid black;
+    border-radius: 10%;
+    display: flex;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    transition: .3s;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.header nav a img{
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.header nav a:hover {
+    height: 60px;
+    width: 60px;
+}
+
+article section h1{
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    font-size: 3rem;
+    font-family: 'Satisfy', cursive;
+}
+
+article section p{
+    font-size: 1.5rem;
+}
+
+article{
+    margin-right: 6vh;
+    text-align: center;
+}
