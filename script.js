@@ -44,7 +44,6 @@ function asistencia(){
         invitado = invitado_arr.toString();
         invitado = invitado.replace(/,/,"%20")
         var url = "https://wa.me/543875992360?text=Hola,%20soy%20"+invitado+"%20y%20quiero%20confirmar%20mi%20asistencia%20a%20la%20fiesta."
-        alert(url);
         window.location.href = url;
     //https://wa.me/543875992360?text=Hola,%20soy%20**%20y%20quiero%20confirmar%20mi%20asistencia%20a%20la%20fiesta./
     }
