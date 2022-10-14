@@ -59,7 +59,7 @@ function eliminar_mensaje(){
     var hijo = document.getElementById("eliminar");
     var aux = padre.removeChild(hijo);
 }
-if(screen.width > 600){
+if((screen.width / screen.height) > 0.75){
     alert("Este sitio fue pensado para verse en dispositivos móviles, es posible que en su pantalla no se vea como originalmente fue pensado")
 }
 setTimeout(eliminar_mensaje, 5000);
