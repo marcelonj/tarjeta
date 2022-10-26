@@ -53,6 +53,20 @@ function asistencia(){
         alert("Por favor ingrese el nombre del invitado.")
     }
 }
+function asistencia_cristian(){
+    var invitado = document.getElementById("nombre").value; 
+    if(invitado != ""){
+        var invitado_arr = invitado.split(' ');
+        invitado = invitado_arr.toString();
+        invitado = invitado.replace(/,/,"%20")
+        var url = "https://wa.me/543884639099?text=Hola,%20soy%20"+invitado+"%20y%20quiero%20confirmar%20mi%20asistencia%20a%20la%20fiesta."
+        window.location.href = url;
+    //https://wa.me/543875992360?text=Hola,%20soy%20**%20y%20quiero%20confirmar%20mi%20asistencia%20a%20la%20fiesta./
+    }
+    else{
+        alert("Por favor ingrese el nombre del invitado.")
+    }
+}
 function copiarAlPortapapeles() {
     var aux = document.createElement("input");
     aux.setAttribute("value", "2850110540095213303358");
